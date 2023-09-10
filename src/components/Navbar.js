@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import logo from '../logo.png';
-
+import { Link } from "react-router-dom";
 
 const StyledNav = styled.nav`
     display: flex;
@@ -28,22 +28,27 @@ const StyledNav = styled.nav`
     img {
         height: 75px; 
     }
-`;
+    
+    a {
+        text-decoration: none; /* Elimina el subrayado */
+        color: #000; /* Cambia el color a negro (#000) o al que desees */
+    }
+    `;
 
 export default function Navbar({ user }) {
     return (
         <StyledNav>
 
             <ul>
-                <li><p to="/proyecto">Proyecto</p></li>
+                <li><Link to={"/proyectos"}>Proyectos</Link></li>
 
-                <li><p to="/propuestas">Propuestas</p></li>
+                <li><Link to={"/propuestas"}>Propuestas</Link></li>
 
-                <li><p to="/empleados">Empleados</p></li>
+                <li><Link to={"/empleados"}>Empleados</Link></li>
 
-                <li><p to="/vacaciones">Vacaciones</p></li>
+                <li><Link to={"/vacaciones"}>Vacaciones</Link></li>
 
-                <li><p to="/cuenta">Cuenta</p></li>
+                <li><Link to={"/cuenta"}>Cuenta</Link></li>
             </ul>
             <img src={logo} alt='Logo' />
 

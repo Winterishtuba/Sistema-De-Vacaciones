@@ -60,7 +60,7 @@ export default function ReactDatePicker() {
       ) : selectedValue === 'opcion 2' ? (
         <div>
           <CenteredDatePicker>
-            Desde: 
+            Desde:
             <div className='DatePicker'>
               <DatePicker
                 selected={selectedDate1}
@@ -70,7 +70,7 @@ export default function ReactDatePicker() {
             </div>
           </CenteredDatePicker>
           <CenteredDatePicker>
-            Hasta:  
+            Hasta:
             <div className='DatePicker'>
               <DatePicker
                 selected={selectedDate2}
@@ -82,7 +82,7 @@ export default function ReactDatePicker() {
         </div>
       ) : null}
       <div>
-      <button onClick={() => console.log("Click")}>Enviar</button>
+        <button onClick={() => console.log("Click")}>Enviar</button>
       </div>
     </div>
 

@@ -13,19 +13,39 @@ import {
 
 const router = createBrowserRouter([
   {
-    path: "empleado",
-    element: <Empleado/>,
+    path: "/",
+    // element: <Login/>,
   },
   {
-    path: "RRHH",
-    element: <RRHH/>,
+    path: "empleados",
+    element: <Empleado />,
+  },
+  {
+    path: "rrhh",
+    element: <RRHH />,
+  },
+  {
+    path: "cuenta",
+    element: <Empleado />,
+  },
+  {
+    path: "vacaciones",
+    element: <Empleado />,
+  },
+  {
+    path: "pryectos",
+    element: <Empleado />,
+  },
+  {
+    path: "propuestas",
+    element: <Empleado />,
   },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-     <RouterProvider router={router} />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
