@@ -7,7 +7,7 @@ import empleadoHistorial from "../components/empleadoHistorial";
 import Overlay from "../components/overlay";
 import vacacionescard from "../components/vacacionescard";
 import empleadoCarta from "../components/empleadoCarta";
-import VacationCard from "../components/vacacionescard";
+import VacationCard from "../components/vacacionescard"                     ;
 
 const Main = styled.main`
     display: flex;
