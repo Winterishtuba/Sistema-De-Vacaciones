@@ -48,7 +48,7 @@ export default function ReactDatePicker() {
 
       {selectedValue === 'opcion 1' ? (
         <CenteredDatePicker>
-          <text>Elija el día:</text>
+          Elija el día:
           <div className='DatePicker'>
             <DatePicker
               selected={selectedDate1}
@@ -60,7 +60,7 @@ export default function ReactDatePicker() {
       ) : selectedValue === 'opcion 2' ? (
         <div>
           <CenteredDatePicker>
-            <text>Desde: </text>
+            Desde: 
             <div className='DatePicker'>
               <DatePicker
                 selected={selectedDate1}
@@ -70,7 +70,7 @@ export default function ReactDatePicker() {
             </div>
           </CenteredDatePicker>
           <CenteredDatePicker>
-            <text>Hasta:  </text>
+            Hasta:  
             <div className='DatePicker'>
               <DatePicker
                 selected={selectedDate2}
