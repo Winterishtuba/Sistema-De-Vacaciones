@@ -1,8 +1,8 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Nav'
 import ReactDatePicker from '../components/DatePicker'
 
-export default function Empleado() {
+export default function Vacaciones() {
   return (
     <div>
     <Navbar></Navbar>

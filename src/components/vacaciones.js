@@ -15,13 +15,13 @@ const Div = styled.div`
     }
 `;
 
-export default function Vacation({vacation}) {
+export default function Vacacion({vacation}) {
     return (
         <Div>
             <p>Nombre: {vacation.employee.nombre}</p>
             <div>
-                <p>Desde: {vacation.desde}</p>
-                <p>Hasta: {vacation.hasta}</p>
+                <p>Desde: {vacation.fechainicio}</p>
+                <p>Hasta: {vacation.fechafin}</p>
             </div>
         </Div>
     );

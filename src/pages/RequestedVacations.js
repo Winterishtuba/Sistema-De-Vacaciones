@@ -1,24 +1,5 @@
 import styled from "styled-components";
 import Nav from "../components/Navbar";
-import { useNavigate } from "react-router-dom";
-import { HashLink as Link } from "react-router-hash-link";
-import { useEffect, useState } from "react";
-import empleadoHistorial from "../components/empleadoHistorial";
-import Overlay from "../components/overlay";
-import vacacionescard from "../components/vacacionescard";
-import empleadoCarta from "../components/empleadoCarta";
-import VacationCard from "../components/vacacionescard";
-const Main = styled.main`
-    display: flex;
-    justify-content: space-around;
-
-    div.employees, div.vacations {
-        width: 15vw;
-        background-color: red;
-    }
-
-
-`;
 
 export default function Empleados({user}) {
     const navigate = useNavigate();
@@ -49,12 +30,6 @@ export default function Empleados({user}) {
         <>
         <Nav user={user} />
         <Main>
-            <div className="employees">
-                <Link to="/empleados/new">Agregar empleado</Link>
-                {employees === null ? <p>cargando</p> : 
-                (employees.length === 0 ? <p>no hay nadie</p> :
-                employees.map(employee => <empleadoCarta employee={employee} vacationRequests={vacationRequests} />))}
-            </div>
             <div className="vacations">
                 {vacationRequests === null ? <p>cargando</p> : 
                 (vacationRequests.length === 0 ? <p>no hay vacaciones</p> :

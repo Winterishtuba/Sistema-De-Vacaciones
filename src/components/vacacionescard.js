@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import vacaciones from "./vacaciones";
-import Vacation from "./vacaciones";
+import vacaciones from "./Vacaciones";
+import Vacation from "./Vacaciones";
 
 const Div = styled.div`
     display: flex;
