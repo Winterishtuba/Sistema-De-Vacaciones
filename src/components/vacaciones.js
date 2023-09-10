@@ -23,6 +23,7 @@ export default function Vacacion({vacation}) {
                 <p>Desde: {vacation.fechainicio}</p>
                 <p>Hasta: {vacation.fechafin}</p>
             </div>
+            
         </Div>
     );
 }

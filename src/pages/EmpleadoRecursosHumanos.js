@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Nav from "../components/Navbar";
+import Nav from "../components/Nav";
 import { useNavigate } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import { useEffect, useState } from "react";
