@@ -8,6 +8,7 @@ import Overlay from "../components/overlay";
 import vacacionescard from "../components/vacacionescard";
 import empleadoCarta from "../components/empleadoCarta";
 import VacationCard from "../components/vacacionescard";
+
 const Main = styled.main`
     display: flex;
     justify-content: space-around;
@@ -55,10 +56,8 @@ export default function Empleados({user}) {
                 (employees.length === 0 ? <p>no hay nadie</p> :
                 employees.map(employee => <empleadoCarta employee={employee} vacationRequests={vacationRequests} />))}
             </div>
-            <div className="vacations">
-                {vacationRequests === null ? <p>cargando</p> : 
-                (vacationRequests.length === 0 ? <p>no hay vacaciones</p> :
-                vacationRequests.filter(vacation => vacation.estado === "En observacion").map(vacation => <VacationCard vacation={vacation} />))}
+            <div className="Vacations">
+            <button onClick={navigate("./RequestedVacations")}>Ir a Ver Requests</button>
             </div>
         </Main>
         </>

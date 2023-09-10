@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import Overlay from "./overlay";
 import { useState } from "react";
-import vacaciones from "./vacaciones";
+import vacaciones from "./Vacaciones";
 import empleadoHistorial from "./empleadoHistorial";
+import VacationCard from "./vacacionescard";
 
 const Div = styled.div`
     width: 100%;
@@ -21,9 +22,9 @@ export default function EmpleadoCarta({employee, vacationRequests}) {
             <button onClick={() => setShowEmployee(!showEmployee)}>Historial</button>
         </Div>
         <Overlay show={showEmployee}>
-            <Employee employee={employee}>
-                {filteredVacations.map(vacation => <Vacation vacation={vacation} />)}
-            </Employee>
+            <EmpleadoCarta employee={employee}>
+                {filteredVacations.map(vacation => <VacationCard vacation={vacation} />)}
+            </EmpleadoCarta>
             <button onClick={() => setShowEmployee(!showEmployee)}>close</button>
         </Overlay>
         </>
