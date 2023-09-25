@@ -12,5 +12,8 @@ app.use(function (req, res, next) {
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
+app.get("*", (req, res) => {
+    res.redirect(301, '/');
+});
 
 app.listen(PORT, () => console.log(`Listening on ${PORT}`));
