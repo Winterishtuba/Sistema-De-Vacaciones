@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from './Login';
 import EmpleadoRecursosHumanos from '../pages/EmpleadoRecursosHumanos'
 import Vacaciones from '../pages/Vacaciones'
+import RequestedVacations from '../pages/RequestedVacations'
 
 export default function MyRouter(props) {
     const userState = useState(null);
@@ -11,10 +12,10 @@ export default function MyRouter(props) {
         <BrowserRouter>
             <Routes>
                 <Route path='/'>
-                    <Route index element={<Login user={user} />} />
+                     <Route index element={<Login user={user} />} /> 
                     <Route path='empleados'>
                         <Route index element={<EmpleadoRecursosHumanos user={user} />} />
-                        {/* <Route path='/nuevo' element={<FormularioEmpleado user={user} />} /> */}
+                        <Route path="RequestedVacations" element={<RequestedVacations user={user} />} /> 
                         {/* <Route path=":idEmpleado" element={<Empleado user={user} />} /> */}
                     </Route>
                     <Route path="vacaciones">
